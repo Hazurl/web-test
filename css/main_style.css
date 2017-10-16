@@ -1,0 +1,75 @@
+/* Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Body */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navigation Bar */
+
+#nav {
+    height: 100px;
+
+    background-color: #333333;
+}
+
+.nav-title {
+    display: table;
+    padding-left: 50px;
+    float: left;
+    height: 100%;
+
+    font-size: 30px;
+}
+
+.nav-title h1 {
+    display: table-cell;
+    vertical-align: middle;
+
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: table;
+    padding-right: 100px;
+    float: right;
+    height: 100%;
+}
+
+.buttons-list {
+    display: table-cell;
+    vertical-align: middle;
+
+    list-style-type: none;    
+    font-size: 0px;
+}
+
+.buttons-list-item {
+    display: inline-flex;
+    padding-left: 25px;
+
+    font-size: 25px;
+}
+
+.buttons-list-item a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+.buttons-list-item a:hover {
+    color: #ffffff;
+}
+
+.separator {
+    background-color: #bf4e4e;
+    height: 4px;
+}
