@@ -7,37 +7,60 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="../css/main_style.css">
-
-    <script src="../js/main_script.js"></script>
 </head>
 
 <body>
-    <nav id="nav">
-        <div class="nav-title">
-            <h1>Hazurl's Web Site</h1>
-        </div>
-        <div class="nav-buttons">
-            <ul class="buttons-list">
-                <li class="buttons-list-item">
-                    <a class="link-icon" href="#AboutMe">About Me</a>
-                </li>
-                <li class="buttons-list-item">
-                    <a class="link-icon" href="#Projects">Projects</a>
-                </li>
-                <li class="buttons-list-item">
-                    <a class="link-icon" href="#ContactMe">Contact Me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="separator"></div>
+    <header id="header">
+        <nav id="nav">
+            <div class="nav-title">
+                <h1>Hazurl's Web Site</h1>
+            </div>
+            <div class="nav-buttons">
+                <ul class="buttons-list">
+                    <li class="buttons-list-item" id="nav-button-top">
+                        <a class="link-icon">Top</a>
+                    </li>
+                    <li class="buttons-list-item" id="nav-button-aboutme">
+                        <a class="link-icon">About Me</a>
+                    </li>
+                    <li class="buttons-list-item" id="nav-button-projects">
+                        <a class="link-icon">Projects</a>
+                    </li>
+                    <li class="buttons-list-item" id="nav-button-contactme">
+                        <a class="link-icon">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="separator"></div>
+    </header>
 
-    <section id="content">
-        <div class="circle-picture">
-            <img src="../img/hatman_circle.png" />
-        </div>
+    <div class="header-offset"></div>
+    <section class="view" id="top">
+        <div class="anchor" id="anchor-top"></div>
+        <p>Acceuil</p>
+        <div class="separator"></div>
+    </section>
+    <section class="view" id="aboutme">
+        <div class="anchor" id="anchor-aboutme"></div>
+        <p>About Me</p>
+            
+        <div class="separator"></div>
+    </section>
+    <section class="view" id="projects">
+        <div class="anchor" id="anchor-projects"></div>
+        <p>Projects</p>
+            
+        <div class="separator"></div>
+    </section>
+    <section class="view" id="contactme">
+        <div class="anchor" id="anchor-contactme"></div>
+        <p>Contact me</p>
+            
+        <div class="separator"></div>
     </section>
 
+    <script src="../js/main_script.js"></script>    
 </body>
 
 </html>

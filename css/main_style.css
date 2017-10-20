@@ -11,54 +11,68 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color:#555555;
+
+    overflow-x: hidden;
 }
 
+/* Header */
 
-/* Navigation Bar */
-
-#nav {
+#header {
+    position: fixed;
     height: 100px;
-
+    width: 100%;
+    top: 0px;
+    
+    z-index: 1000;
     background-color: #333333;
 }
 
+/* Navigation Bar */
+
+.separator {
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    background-color: #bf4e4e;
+}
+
+#nav {
+    height: 96px;
+}
+
+#nav * {
+    height: 96px;
+    line-height: 96px;
+    white-space: nowrap;
+}
+
 .nav-title {
-    display: table;
     padding-left: 50px;
     float: left;
-    height: 100%;
-
-    font-size: 30px;
+    
+    font-size: 2em;
 }
 
 .nav-title h1 {
-    display: table-cell;
-    vertical-align: middle;
-
-    color: #cccccc;
+    color: #dddddd;
     font-weight: bold;
 }
 
 .nav-buttons {
-    display: table;
-    padding-right: 100px;
+    padding-right: 50px;
     float: right;
-    height: 100%;
 }
 
 .buttons-list {
-    display: table-cell;
-    vertical-align: middle;
-
     list-style-type: none;    
-    font-size: 0px;
 }
 
 .buttons-list-item {
-    display: inline-flex;
+    display: inline-block;
     padding-left: 25px;
-
-    font-size: 25px;
+    font-size: 2em;
 }
 
 .buttons-list-item a {
@@ -70,33 +84,40 @@ body {
     color: #ffffff;
 }
 
-.separator {
-    height: 4px;
+/* View */
 
-    background-color: #bf4e4e;
-}
-
-/* Content */
-
-#content {
-    margin: 50px 200px;
-}
-
-.circle-picture {
-    height: 400px;
-    width: 400px;
-
-    box-shadow: inset 0px 0px 50px 10px #555555;
-    border-radius: 200px;
-}
-
-.circle-picture img {
-    height: 100%;
-    width: 100%;
+.view {
+    height: calc(100vh - 100px); /* header offset */
+    width: 100vw;
     position: relative;
+    background-color: #aaaaaa;
+}
 
-    display: block;
+.header-offset {
+    height: 100px;
+}
 
-    border-radius: 50%;
-    z-index: -1;
+.anchor {
+    position: absolute;
+    top: -100px;
+}
+
+/* Acceuil */
+
+#top {
+}
+
+/* About Me */
+
+#aboutme {
+}
+
+/* Projects */
+
+#projects {
+}
+
+/* Contact Me */
+
+#contactme {
 }
